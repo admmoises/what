@@ -1,0 +1,56 @@
+{
+  "okx": {
+    "api_key": "SUA_API_KEY_AQUI",
+    "secret_key": "SUA_SECRET_KEY_AQUI",
+    "passphrase": "SUA_PASSPHRASE_AQUI",
+    "demo": true
+  },
+
+  "estrategia": {
+    "tipo": "market_making",
+    "par": "BTC-USDT",
+    "modo_trade": "cash",
+    "intervalo_ciclo": 1.0,
+
+    "market_making": {
+      "spread_bid": 0.001,
+      "spread_ask": 0.001,
+      "tamanho_ordem": 0.001,
+      "num_niveis": 3,
+      "incremento_nivel": 0.0005,
+      "rebalancear_a_cada": 5,
+      "inventario_maximo": 0.01,
+      "casas_preco": 2,
+      "casas_quantidade": 6,
+      "ajuste_inventario": true,
+      "fator_ajuste": 0.5
+    },
+
+    "grid_trading": {
+      "preco_minimo": 90000,
+      "preco_maximo": 110000,
+      "num_grades": 20,
+      "tamanho_ordem": 0.001,
+      "grade_geometrica": false,
+      "casas_preco": 2,
+      "casas_quantidade": 6,
+      "recriar_ordens_preenchidas": true
+    }
+  },
+
+  "risco": {
+    "tamanho_maximo_ordem": 100,
+    "exposicao_maxima": 1000,
+    "stop_loss_percentual": 2.0,
+    "stop_loss_diario": 5.0,
+    "max_ordens_abertas": 20,
+    "max_ordens_por_minuto": 30,
+    "drawdown_maximo": 10.0,
+    "kill_switch_perda": 15.0
+  },
+
+  "logging": {
+    "nivel": "INFO",
+    "arquivo_log": null
+  }
+}
