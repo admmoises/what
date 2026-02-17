@@ -8,3 +8,4 @@ config/config.json
 dist/
 build/
 .env
+hummingbot_repo/
